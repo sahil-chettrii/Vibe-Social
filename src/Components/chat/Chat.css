@@ -30,6 +30,13 @@
         flex-direction: column;
         gap: 5px;
     
+
+         img {
+                width: 100%;
+                 height: 300px;
+                  border-radius: 10px;
+                   object-fit: cover;
+                        }
          span {
           font-size: 16px;
           font-weight: 600;
@@ -56,6 +63,49 @@
     .center {
         padding: 20px;
         flex: 1; 
+        display: flex;
+        overflow: scroll;
+        gap: 20px;
+        flex-direction: column;
+
+
+        .message {
+          max-width: 70%;
+          display: flex;
+          gap: 20px;
+
+
+          &.own{
+                 align-self: flex-end;
+
+
+                 .texts{
+                    p{
+                        background-color: rgb(44, 44, 245);
+                    }
+                    
+                 }
+          }
+
+          img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .texts{
+            flex: 1;
+            gap: 5px;
+            ;
+
+
+            p{
+                padding: 20px;
+                background-color: rgba(17 , 25, 40 , 0.3);
+                border-radius: 10px;
+            }
+          }
+        }
     }
     .bottom{
         padding: 20px;
@@ -98,7 +148,7 @@
     position: absolute !important;
     bottom: 50px;
     right: 0;
-}/
+}
 
         .SendButton {
             background-color: #5183fe;
