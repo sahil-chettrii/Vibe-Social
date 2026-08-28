@@ -1,11 +1,26 @@
 import {
-  MessageCircle, Users, Phone, Contact, Bookmark, Bell, Settings,
-  SquarePen, ChevronDown,
+  MessageCircle,
+  Users,
+  Phone,
+  Contact,
+  Bookmark,
+  Bell,
+  Settings,
+  SquarePen,
+  ChevronDown,
 } from 'lucide-react';
 import Avatar from './Avatar';
-// import { currentUser } from '../data/mockData';
+import { currentUser } from '../data/mockData';
 
-const ICONS = { MessageCircle, Users, Phone, Contact, Bookmark, Bell, Settings };
+const ICONS = {
+  MessageCircle,
+  Users,
+  Phone,
+  Contact,
+  Bookmark,
+  Bell,
+  Settings,
+};
 
 export default function NavRail({ navItems, activeNav, onSelect }) {
   return (
